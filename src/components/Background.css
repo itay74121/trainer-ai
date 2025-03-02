@@ -1,0 +1,16 @@
+.background {
+  background-color: #a294fa;
+  height: 100vh;
+  display: flex;
+  flex-direction: column; /* Align children vertically */
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  color: #fff;
+}
+
+.background h1 {
+  color: #333;
+}

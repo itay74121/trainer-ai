@@ -1,0 +1,37 @@
+.chat-message {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+  background-color: #CDC1FF;
+  box-shadow: 0px 1px 10px rgb(158, 158, 158);
+  font-size: 14px;
+  color: black;
+  text-align: left;
+  display: inline-block;
+  max-width: 45vw;
+  /*margin-right: calc(100vw - 50vw);*/
+  margin-left: 4vw;
+  word-wrap: break-word; /* For older browsers */
+  overflow-wrap: break-word; /* Modern standard */
+  white-space: pre-wrap; /* Ensure spaces and line breaks are preserved */
+}
+
+.chat-message-other{
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+  background-color: #E5D9F2;
+  box-shadow: 0px 1px 10px rgb(158, 158, 158);
+  font-size: 14px;
+  color: black;
+  text-align: left;
+  display: inline-block;
+  max-width: 45vw;
+  margin-right: 4vw;
+  /*margin-left: calc(100vw - 50vw);*/
+  word-wrap: break-word; /* For older browsers */
+  overflow-wrap: break-word; /* Modern standard */
+  white-space: pre-wrap; /* Ensure spaces and line breaks are preserved */
+}

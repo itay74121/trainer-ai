@@ -1,0 +1,73 @@
+.chat-box {
+  border: 1px solid #ccc;
+  height: 85vh;
+  width: 100vw;
+  overflow-y: scroll; /* Prevent scrolling */
+  border: none;
+  background-color: #F5EFFF;
+}
+
+.chat-input {
+  width: 80%;
+  border: none;
+  height: 99%;
+  resize: none; /* Prevent resizing */
+  outline: none;
+  font-size: 16px;
+}
+
+.chat-send-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 100%;
+  width: 20%;
+  border: none;
+}
+
+.chat-send-button:hover {
+  background-color: #0056b3;
+}
+
+.chat-input-container {
+  display: flex;
+  align-items: center;
+  height: 7vh;
+  width: 100vw;
+  margin-top: 0px;
+}
+
+@keyframes bounce {
+  0%, 80%, 100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+}
+
+.loading-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.loading-dots div {
+  width: 5px;
+  height: 5px;
+  margin: 0 4px;
+  background-color: #333;
+  border-radius: 50%;
+  animation: bounce 1.4s infinite ease-in-out both;
+}
+
+.loading-dots div:nth-child(1) {
+  animation-delay: -0.32s;
+}
+
+.loading-dots div:nth-child(2) {
+  animation-delay: -0.16s;
+}
