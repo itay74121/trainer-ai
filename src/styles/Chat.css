@@ -4,7 +4,7 @@
   width: 100vw;
   overflow-y: scroll; /* Prevent scrolling */
   border: none;
-  background-color: #F5EFFF;
+  background-color: #FAF3E0;
 }
 
 .chat-input {
@@ -14,11 +14,12 @@
   resize: none; /* Prevent resizing */
   outline: none;
   font-size: 16px;
+  background-color: #FFFFFF;
 }
 
 .chat-send-button {
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #FF6F61;
   color: white;
   border-radius: 4px;
   cursor: pointer;
@@ -28,7 +29,7 @@
 }
 
 .chat-send-button:hover {
-  background-color: #0056b3;
+  background-color: #D9534F;
 }
 
 .chat-input-container {
@@ -59,7 +60,7 @@
   width: 5px;
   height: 5px;
   margin: 0 4px;
-  background-color: #333;
+  background-color: #FF6F61;
   border-radius: 50%;
   animation: bounce 1.4s infinite ease-in-out both;
 }

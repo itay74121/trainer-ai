@@ -7,8 +7,8 @@ function Home() {
   const navigate = useNavigate();
 
   var button_style = {
-    backgroundColor: '#E5D9F2',
-    color: 'white',
+    backgroundColor: '#FAF3E0',
+    color: 'black',
     width: '75vw',
     height: '7vh',
     border: 'none',

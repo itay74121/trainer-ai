@@ -12,7 +12,7 @@ const Button = ({ title, style, onClick }) => {
 Button.propTypes = {
     style: PropTypes.object,
     onClick: PropTypes.func.isRequired,
-    children: PropTypes.node.isRequired,
+    title: PropTypes.string.isRequired,
 };
 
 export default Button;

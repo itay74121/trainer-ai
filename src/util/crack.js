@@ -1,5 +1,6 @@
 import axios from "axios"
 import { SignJWT,jwtVerify } from 'jose';
+import { getAuth } from "firebase/auth";
 
 async function getJWT(data) {
     const token=process.env.REACT_APP_TOKEN
@@ -45,6 +46,7 @@ export async function AskAI({ message, messages, setMessages, roles, setRoles, m
                 role: updatedRoles[index],
                 content: msg,
             })), { role: "user", content: message }],
+            userid: getAuth().currentUser.uid,
             stream: false,
         }
         const response = await axios.post(process.env.REACT_APP_OLLAMA_API, {token:await getJWT(obj)});

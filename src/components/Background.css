@@ -1,5 +1,5 @@
 .background {
-  background-color: #a294fa;
+  background-color: #FF6F61;
   height: 100vh;
   display: flex;
   flex-direction: column; /* Align children vertically */
@@ -8,9 +8,9 @@
 }
 
 .text {
-  color: #fff;
+  color: #FFF5E1;
 }
 
 .background h1 {
-  color: #333;
+  color: #FFFFFF;
 }
