@@ -3,7 +3,7 @@ import { SignJWT,jwtVerify } from 'jose';
 import { getAuth } from "firebase/auth";
 
 async function getJWT(data) {
-    const token=process.env.REACT_APP_TOKEN
+    const token = process.env.REACT_APP_TOKEN
     const secret = new TextEncoder().encode(token);
     const jwt = await new SignJWT(data)
     .setProtectedHeader({ alg: 'HS256' })
