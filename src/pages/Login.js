@@ -11,15 +11,27 @@ function Login() {
   const [password, setPassword] = useState('');
   const [accepted, setAccepted] = useState('');
   const auth = getAuth();
+    useEffect(()=>{
+      const unsubscribe = onAuthStateChanged(auth, async (user) => {
+        if (user) {
+          const token = await user.getIdTokenResult();
+          const authTime = token.claims.auth_time * 1000; // ms
+          const now = Date.now();
+          const oneDay = 24 * 60 * 60 * 1000;
+      
+          if (now - authTime > oneDay) {
+            console.log("signing out")
+            auth.signOut();
+          } else{
+            setAccepted(true)
+          }
+        }
+      });
+      return ()=> unsubscribe()
+    },[auth])
+    
 
-  onAuthStateChanged(auth, (user) => {
-    if (user) {
-      setAccepted(true);
-    } else {
-      setAccepted(false);
-    }
-  });
-
+  
   useEffect(() => {
     if (accepted === true) {
       navigate('/dashboard');
